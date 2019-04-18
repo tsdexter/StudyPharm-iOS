@@ -9,5 +9,6 @@ target 'StudyPharm' do
   pod 'Firebase/Core'
   pod 'Firebase/Auth'
   pod 'MaterialComponents/Snackbar'
+  pod 'lottie-ios'
 
 end

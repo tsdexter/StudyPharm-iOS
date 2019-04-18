@@ -54,6 +54,7 @@ PODS:
   - GoogleUtilities/UserDefaults (5.7.0):
     - GoogleUtilities/Logger
   - GTMSessionFetcher/Core (1.2.1)
+  - lottie-ios (3.0.4)
   - MaterialComponents/AnimationTiming (82.0.0)
   - MaterialComponents/Buttons (82.0.0):
     - MaterialComponents/Ink
@@ -105,6 +106,7 @@ PODS:
 DEPENDENCIES:
   - Firebase/Auth
   - Firebase/Core
+  - lottie-ios
   - MaterialComponents/Snackbar
 
 SPEC REPOS:
@@ -118,6 +120,7 @@ SPEC REPOS:
     - GoogleAppMeasurement
     - GoogleUtilities
     - GTMSessionFetcher
+    - lottie-ios
     - MaterialComponents
     - MDFInternationalization
     - MDFTextAccessibility
@@ -133,11 +136,12 @@ SPEC CHECKSUMS:
   GoogleAppMeasurement: ffe513e90551844a739e7bcbb1d2aca1c28a4338
   GoogleUtilities: 273e67030e0de313e7304f6dcfa96fc5214f6c23
   GTMSessionFetcher: 32aeca0aa144acea523e1c8e053089dec2cb98ca
+  lottie-ios: 55a2de40418f8de2b155efaba4d4d1a025a5c570
   MaterialComponents: 716ab39b84350c755dfd4f8bc9ca168f377af504
   MDFInternationalization: 010097556d6b09d2c4ea38e0820ea6d37be6a314
   MDFTextAccessibility: 85c09a1bd9c321f494348e632a25063bcda35a53
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
 
-PODFILE CHECKSUM: dadedf3d4fcc7091ff52074f0f27a8a61190f9f8
+PODFILE CHECKSUM: 23447d71949a60b00accded7597144ee7f686095
 
 COCOAPODS: 1.6.1
