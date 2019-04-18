@@ -8,5 +8,6 @@ target 'StudyPharm' do
   # Pods for StudyPharm
   pod 'Firebase/Core'
   pod 'Firebase/Auth'
+  pod 'MaterialComponents/Snackbar'
 
 end
