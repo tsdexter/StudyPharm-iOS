@@ -8,9 +8,19 @@
 
 import Foundation
 import UIKit
+import Firebase
+import FirebaseAuth
 
 class ResourcesTabController : UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    @IBAction func logout(_ sender: Any) {
+        do {
+            try Auth.auth().signOut()
+            dismiss(animated: true, completion: nil)
+        } catch let signOutError as NSError {
+            print ("Error signing out: %@", signOutError)
+        }
     }
 }

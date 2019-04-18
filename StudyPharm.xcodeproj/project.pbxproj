@@ -16,6 +16,8 @@
 		E4DF98F62267FE7C000A35F6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E4DF98F52267FE7C000A35F6 /* GoogleService-Info.plist */; };
 		E4DF98F822680A4E000A35F6 /* ResourcesTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DF98F722680A4E000A35F6 /* ResourcesTabController.swift */; };
 		E4DF98FA226810B6000A35F6 /* PracticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DF98F9226810B6000A35F6 /* PracticeViewController.swift */; };
+		E4DF98FF22683A34000A35F6 /* animations in Resources */ = {isa = PBXBuildFile; fileRef = E4DF98FE22683A34000A35F6 /* animations */; };
+		E4DF99042268561A000A35F6 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DF99032268561A000A35F6 /* RegisterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		E4DF98F52267FE7C000A35F6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E4DF98F722680A4E000A35F6 /* ResourcesTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourcesTabController.swift; sourceTree = "<group>"; };
 		E4DF98F9226810B6000A35F6 /* PracticeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeViewController.swift; sourceTree = "<group>"; };
+		E4DF98FE22683A34000A35F6 /* animations */ = {isa = PBXFileReference; lastKnownFileType = folder; path = animations; sourceTree = "<group>"; };
+		E4DF99032268561A000A35F6 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +88,7 @@
 		E4DF98E22267FE65000A35F6 /* StudyPharm */ = {
 			isa = PBXGroup;
 			children = (
+				E4DF98FE22683A34000A35F6 /* animations */,
 				E4DF98E32267FE65000A35F6 /* AppDelegate.swift */,
 				E4DF98E52267FE65000A35F6 /* LoginViewController.swift */,
 				E4DF98E72267FE65000A35F6 /* Main.storyboard */,
@@ -93,6 +98,7 @@
 				E4DF98F52267FE7C000A35F6 /* GoogleService-Info.plist */,
 				E4DF98F722680A4E000A35F6 /* ResourcesTabController.swift */,
 				E4DF98F9226810B6000A35F6 /* PracticeViewController.swift */,
+				E4DF99032268561A000A35F6 /* RegisterViewController.swift */,
 			);
 			path = StudyPharm;
 			sourceTree = "<group>";
@@ -159,6 +165,7 @@
 			files = (
 				E4DF98EE2267FE65000A35F6 /* LaunchScreen.storyboard in Resources */,
 				E4DF98F62267FE7C000A35F6 /* GoogleService-Info.plist in Resources */,
+				E4DF98FF22683A34000A35F6 /* animations in Resources */,
 				E4DF98EB2267FE65000A35F6 /* Assets.xcassets in Resources */,
 				E4DF98E92267FE65000A35F6 /* Main.storyboard in Resources */,
 			);
@@ -231,6 +238,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4DF98FA226810B6000A35F6 /* PracticeViewController.swift in Sources */,
+				E4DF99042268561A000A35F6 /* RegisterViewController.swift in Sources */,
 				E4DF98E62267FE65000A35F6 /* LoginViewController.swift in Sources */,
 				E4DF98E42267FE65000A35F6 /* AppDelegate.swift in Sources */,
 				E4DF98F822680A4E000A35F6 /* ResourcesTabController.swift in Sources */,
