@@ -1,0 +1,6 @@
+framework module Pods_StudyPharm {
+  umbrella header "Pods-StudyPharm-umbrella.h"
+
+  export *
+  module * { export * }
+}
