@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		AF48B920E3D7832A00568910 /* Pods_StudyPharm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BE51125405E7FB8EE023EF0 /* Pods_StudyPharm.framework */; };
-		E4A961F8226D60DC0023B413 /* Toolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A961F7226D60DC0023B413 /* Toolbar.swift */; };
-		E4A961FA226D61D10023B413 /* ModulesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A961F9226D61D10023B413 /* ModulesTableViewController.swift */; };
-		E4A961FC226D62560023B413 /* ListViewDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A961FB226D62560023B413 /* ListViewDatasource.swift */; };
 		E4A961FF226D8A680023B413 /* StudyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A961FE226D8A680023B413 /* StudyViewController.swift */; };
 		E4A96201226D8BF60023B413 /* ModuleListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A96200226D8BF60023B413 /* ModuleListCell.swift */; };
 		E4A96203226D8C320023B413 /* Module.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A96202226D8C320023B413 /* Module.swift */; };
-		E4A96205226D9E210023B413 /* ResourceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A96204226D9E210023B413 /* ResourceViewController.swift */; };
+		E4A96205226D9E210023B413 /* ResourceListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A96204226D9E210023B413 /* ResourceListViewController.swift */; };
+		E4A96207226E0A920023B413 /* UserBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4A96206226E0A920023B413 /* UserBarView.xib */; };
+		E4A9620B226E1B350023B413 /* UserBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A9620A226E1B350023B413 /* UserBarView.swift */; };
+		E4A9620F226E43D10023B413 /* ResourceListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A9620E226E43D10023B413 /* ResourceListCell.swift */; };
+		E4A96211226E441D0023B413 /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A96210226E441D0023B413 /* Resource.swift */; };
+		E4A96217226E4DD90023B413 /* ResourceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A96216226E4DD90023B413 /* ResourceViewController.swift */; };
 		E4DF98E42267FE65000A35F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DF98E32267FE65000A35F6 /* AppDelegate.swift */; };
 		E4DF98E62267FE65000A35F6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DF98E52267FE65000A35F6 /* LoginViewController.swift */; };
 		E4DF98E92267FE65000A35F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4DF98E72267FE65000A35F6 /* Main.storyboard */; };
 		E4DF98EB2267FE65000A35F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4DF98EA2267FE65000A35F6 /* Assets.xcassets */; };
 		E4DF98EE2267FE65000A35F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4DF98EC2267FE65000A35F6 /* LaunchScreen.storyboard */; };
 		E4DF98F62267FE7C000A35F6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E4DF98F52267FE7C000A35F6 /* GoogleService-Info.plist */; };
-		E4DF98F822680A4E000A35F6 /* ResourcesTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DF98F722680A4E000A35F6 /* ResourcesTabController.swift */; };
+		E4DF98F822680A4E000A35F6 /* MainTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DF98F722680A4E000A35F6 /* MainTabController.swift */; };
 		E4DF98FA226810B6000A35F6 /* PracticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DF98F9226810B6000A35F6 /* PracticeViewController.swift */; };
 		E4DF98FF22683A34000A35F6 /* animations in Resources */ = {isa = PBXBuildFile; fileRef = E4DF98FE22683A34000A35F6 /* animations */; };
 		E4DF99042268561A000A35F6 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DF99032268561A000A35F6 /* RegisterViewController.swift */; };
@@ -31,13 +33,15 @@
 		1A1B128BCF299BEF6F01EBCF /* Pods-StudyPharm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StudyPharm.release.xcconfig"; path = "Target Support Files/Pods-StudyPharm/Pods-StudyPharm.release.xcconfig"; sourceTree = "<group>"; };
 		3BE51125405E7FB8EE023EF0 /* Pods_StudyPharm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StudyPharm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		453DF1B5EB08F987F2392404 /* Pods-StudyPharm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StudyPharm.debug.xcconfig"; path = "Target Support Files/Pods-StudyPharm/Pods-StudyPharm.debug.xcconfig"; sourceTree = "<group>"; };
-		E4A961F7226D60DC0023B413 /* Toolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toolbar.swift; sourceTree = "<group>"; };
-		E4A961F9226D61D10023B413 /* ModulesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModulesTableViewController.swift; sourceTree = "<group>"; };
-		E4A961FB226D62560023B413 /* ListViewDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewDatasource.swift; sourceTree = "<group>"; };
 		E4A961FE226D8A680023B413 /* StudyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyViewController.swift; sourceTree = "<group>"; };
 		E4A96200226D8BF60023B413 /* ModuleListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleListCell.swift; sourceTree = "<group>"; };
 		E4A96202226D8C320023B413 /* Module.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Module.swift; sourceTree = "<group>"; };
-		E4A96204226D9E210023B413 /* ResourceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceViewController.swift; sourceTree = "<group>"; };
+		E4A96204226D9E210023B413 /* ResourceListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceListViewController.swift; sourceTree = "<group>"; };
+		E4A96206226E0A920023B413 /* UserBarView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserBarView.xib; sourceTree = "<group>"; };
+		E4A9620A226E1B350023B413 /* UserBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserBarView.swift; sourceTree = "<group>"; };
+		E4A9620E226E43D10023B413 /* ResourceListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceListCell.swift; sourceTree = "<group>"; };
+		E4A96210226E441D0023B413 /* Resource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
+		E4A96216226E4DD90023B413 /* ResourceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceViewController.swift; sourceTree = "<group>"; };
 		E4DF98E02267FE65000A35F6 /* StudyPharm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StudyPharm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4DF98E32267FE65000A35F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E4DF98E52267FE65000A35F6 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -46,7 +50,7 @@
 		E4DF98ED2267FE65000A35F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E4DF98EF2267FE65000A35F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E4DF98F52267FE7C000A35F6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		E4DF98F722680A4E000A35F6 /* ResourcesTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourcesTabController.swift; sourceTree = "<group>"; };
+		E4DF98F722680A4E000A35F6 /* MainTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabController.swift; sourceTree = "<group>"; };
 		E4DF98F9226810B6000A35F6 /* PracticeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeViewController.swift; sourceTree = "<group>"; };
 		E4DF98FE22683A34000A35F6 /* animations */ = {isa = PBXFileReference; lastKnownFileType = folder; path = animations; sourceTree = "<group>"; };
 		E4DF99032268561A000A35F6 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
@@ -81,6 +85,48 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		E4A96212226E44360023B413 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E4A96202226D8C320023B413 /* Module.swift */,
+				E4A96210226E441D0023B413 /* Resource.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E4A96213226E444F0023B413 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E4DF98E52267FE65000A35F6 /* LoginViewController.swift */,
+				E4DF98F722680A4E000A35F6 /* MainTabController.swift */,
+				E4DF98F9226810B6000A35F6 /* PracticeViewController.swift */,
+				E4DF99032268561A000A35F6 /* RegisterViewController.swift */,
+				E4A961FE226D8A680023B413 /* StudyViewController.swift */,
+				E4A96204226D9E210023B413 /* ResourceListViewController.swift */,
+				E4A96216226E4DD90023B413 /* ResourceViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		E4A96214226E446B0023B413 /* UserBarView */ = {
+			isa = PBXGroup;
+			children = (
+				E4A96206226E0A920023B413 /* UserBarView.xib */,
+				E4A9620A226E1B350023B413 /* UserBarView.swift */,
+			);
+			path = UserBarView;
+			sourceTree = "<group>";
+		};
+		E4A96215226E449A0023B413 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E4A96214226E446B0023B413 /* UserBarView */,
+				E4A96200226D8BF60023B413 /* ModuleListCell.swift */,
+				E4A9620E226E43D10023B413 /* ResourceListCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		E4DF98D72267FE65000A35F6 = {
 			isa = PBXGroup;
 			children = (
@@ -104,22 +150,14 @@
 			children = (
 				E4DF98FE22683A34000A35F6 /* animations */,
 				E4DF98E32267FE65000A35F6 /* AppDelegate.swift */,
-				E4DF98E52267FE65000A35F6 /* LoginViewController.swift */,
+				E4A96212226E44360023B413 /* Models */,
+				E4A96215226E449A0023B413 /* Views */,
+				E4A96213226E444F0023B413 /* Controllers */,
 				E4DF98E72267FE65000A35F6 /* Main.storyboard */,
 				E4DF98EA2267FE65000A35F6 /* Assets.xcassets */,
 				E4DF98EC2267FE65000A35F6 /* LaunchScreen.storyboard */,
 				E4DF98EF2267FE65000A35F6 /* Info.plist */,
 				E4DF98F52267FE7C000A35F6 /* GoogleService-Info.plist */,
-				E4DF98F722680A4E000A35F6 /* ResourcesTabController.swift */,
-				E4DF98F9226810B6000A35F6 /* PracticeViewController.swift */,
-				E4DF99032268561A000A35F6 /* RegisterViewController.swift */,
-				E4A961F7226D60DC0023B413 /* Toolbar.swift */,
-				E4A961F9226D61D10023B413 /* ModulesTableViewController.swift */,
-				E4A961FB226D62560023B413 /* ListViewDatasource.swift */,
-				E4A961FE226D8A680023B413 /* StudyViewController.swift */,
-				E4A96200226D8BF60023B413 /* ModuleListCell.swift */,
-				E4A96202226D8C320023B413 /* Module.swift */,
-				E4A96204226D9E210023B413 /* ResourceViewController.swift */,
 			);
 			path = StudyPharm;
 			sourceTree = "<group>";
@@ -187,6 +225,7 @@
 				E4DF98EE2267FE65000A35F6 /* LaunchScreen.storyboard in Resources */,
 				E4DF98F62267FE7C000A35F6 /* GoogleService-Info.plist in Resources */,
 				E4DF98FF22683A34000A35F6 /* animations in Resources */,
+				E4A96207226E0A920023B413 /* UserBarView.xib in Resources */,
 				E4DF98EB2267FE65000A35F6 /* Assets.xcassets in Resources */,
 				E4DF98E92267FE65000A35F6 /* Main.storyboard in Resources */,
 			);
@@ -227,10 +266,12 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-StudyPharm/Pods-StudyPharm-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/BoringSSL-GRPC/openssl_grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/Down/Down.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/MDFInternationalization/MDFInternationalization.framework",
 				"${BUILT_PRODUCTS_DIR}/MDFTextAccessibility/MDFTextAccessibility.framework",
+				"${BUILT_PRODUCTS_DIR}/MarkdownView/MarkdownView.framework",
 				"${BUILT_PRODUCTS_DIR}/MaterialComponents/MaterialComponents.framework",
 				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
 				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
@@ -244,10 +285,12 @@
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl_grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Down.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MDFInternationalization.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MDFTextAccessibility.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MarkdownView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MaterialComponents.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
@@ -268,18 +311,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4A9620F226E43D10023B413 /* ResourceListCell.swift in Sources */,
 				E4DF98FA226810B6000A35F6 /* PracticeViewController.swift in Sources */,
-				E4A961FA226D61D10023B413 /* ModulesTableViewController.swift in Sources */,
-				E4A96205226D9E210023B413 /* ResourceViewController.swift in Sources */,
+				E4A96205226D9E210023B413 /* ResourceListViewController.swift in Sources */,
 				E4DF99042268561A000A35F6 /* RegisterViewController.swift in Sources */,
 				E4DF98E62267FE65000A35F6 /* LoginViewController.swift in Sources */,
+				E4A96217226E4DD90023B413 /* ResourceViewController.swift in Sources */,
 				E4A961FF226D8A680023B413 /* StudyViewController.swift in Sources */,
-				E4A961F8226D60DC0023B413 /* Toolbar.swift in Sources */,
-				E4A961FC226D62560023B413 /* ListViewDatasource.swift in Sources */,
 				E4DF98E42267FE65000A35F6 /* AppDelegate.swift in Sources */,
-				E4DF98F822680A4E000A35F6 /* ResourcesTabController.swift in Sources */,
+				E4DF98F822680A4E000A35F6 /* MainTabController.swift in Sources */,
 				E4A96203226D8C320023B413 /* Module.swift in Sources */,
+				E4A96211226E441D0023B413 /* Resource.swift in Sources */,
 				E4A96201226D8BF60023B413 /* ModuleListCell.swift in Sources */,
+				E4A9620B226E1B350023B413 /* UserBarView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

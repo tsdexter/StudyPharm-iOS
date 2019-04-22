@@ -11,7 +11,9 @@ import UIKit
 import Firebase
 import FirebaseAuth
 
-class ResourcesTabController : UITabBarController {
+class MainTabController : UITabBarController {
+    var handle: AuthStateDidChangeListenerHandle?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }

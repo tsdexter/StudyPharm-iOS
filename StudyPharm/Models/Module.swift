@@ -9,9 +9,11 @@
 import Foundation
 
 class Module {
+    let id: String
     let name: String
     
-    init(name: String) {
+    init(id: String, name: String) {
+        self.id = id
         self.name = name
     }
 }

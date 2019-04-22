@@ -112,6 +112,12 @@ class RegisterViewController: UIViewController {
                     strongSelf.registerAlert(message: error!.localizedDescription)
                     return
                 }
+//                let changeRequest = Auth.auth().currentUser?.createProfileChangeRequest()
+//                changeRequest?.displayName = name
+//                changeRequest?.commitChanges { (error) in
+//                    strongSelf.registerAlert(message: error!.localizedDescription)
+//                    return
+//                }
                 strongSelf.dismiss(animated: true, completion: nil)
                 strongSelf.emailTextField.text = ""
                 strongSelf.passwordTextField.text = ""

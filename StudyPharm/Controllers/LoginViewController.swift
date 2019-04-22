@@ -82,6 +82,8 @@ class LoginViewController: UIViewController {
             // if user is logged in, redirect to main view
             if let user = user {
                 self.redirect()
+            } else {
+                //self.redirectToLogin()
             }
         }
     }
@@ -117,9 +119,14 @@ class LoginViewController: UIViewController {
     }
     
     func redirect() {
-        let resourcesTabController = storyboard?.instantiateViewController(withIdentifier: "ResourcesTabController") as! ResourcesTabController
-        resourcesTabController.selectedViewController = resourcesTabController.viewControllers?[0]
-        present(resourcesTabController, animated: true, completion: nil)
+        let mainTabController = storyboard?.instantiateViewController(withIdentifier: "MainTabController") as! MainTabController
+        mainTabController.selectedViewController = mainTabController.viewControllers?[0]
+        present(mainTabController, animated: true, completion: nil)
+    }
+    
+    func redirectToLogin() {
+        let loginController = storyboard?.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
+        present(loginController, animated: true, completion: nil)
     }
     
     func loginAlert(message: String) {
