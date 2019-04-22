@@ -11,5 +11,7 @@ target 'StudyPharm' do
   pod 'Firebase/Auth'
   pod 'MaterialComponents/Snackbar'
   pod 'lottie-ios'
+  pod 'Down'
+  pod 'MarkdownView'
 
 end
