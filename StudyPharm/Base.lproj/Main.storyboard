@@ -205,41 +205,48 @@
             </objects>
             <point key="canvasLocation" x="1134" y="92"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="5Se-MG-7Yi">
+        <!--Study-->
+        <scene sceneID="6ju-H0-djE">
             <objects>
-                <viewController id="ExA-Qc-Di6" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="u0O-ao-tV2">
+                <viewController storyboardIdentifier="StudyViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Nmz-FO-xEl" customClass="StudyViewController" customModule="StudyPharm" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mFL-5w-6jF">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pTw-xn-IbV">
-                                <rect key="frame" x="131" y="318" width="112" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="go to detail view">
-                                    <color key="titleColor" red="0.0" green="0.29411764709999999" blue="0.52941176469999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="Lqw-LR-WQF" kind="show" id="Rsh-rt-C0L"/>
-                                </connections>
-                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Modules" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lc1-gL-WwB">
+                                <rect key="frame" x="15" y="80" width="345" height="29"/>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="HZq-rf-Wvd">
+                                <rect key="frame" x="15" y="169" width="345" height="434"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="1PZ-MS-5Ls"/>
+                        <constraints>
+                            <constraint firstItem="ydv-1Y-uOW" firstAttribute="bottom" secondItem="HZq-rf-Wvd" secondAttribute="bottom" constant="15" id="2gt-iX-kcz"/>
+                            <constraint firstItem="HZq-rf-Wvd" firstAttribute="top" secondItem="Lc1-gL-WwB" secondAttribute="bottom" constant="60" id="GDa-4N-hgc"/>
+                            <constraint firstItem="HZq-rf-Wvd" firstAttribute="leading" secondItem="ydv-1Y-uOW" secondAttribute="leading" constant="15" id="XZk-0o-Nia"/>
+                            <constraint firstItem="ydv-1Y-uOW" firstAttribute="trailing" secondItem="HZq-rf-Wvd" secondAttribute="trailing" constant="15" id="b03-VH-bn1"/>
+                            <constraint firstItem="Lc1-gL-WwB" firstAttribute="leading" secondItem="ydv-1Y-uOW" secondAttribute="leading" constant="15" id="g16-1A-xuJ"/>
+                            <constraint firstItem="ydv-1Y-uOW" firstAttribute="trailing" secondItem="Lc1-gL-WwB" secondAttribute="trailing" constant="15" id="i9f-H7-HUT"/>
+                            <constraint firstItem="Lc1-gL-WwB" firstAttribute="top" secondItem="ydv-1Y-uOW" secondAttribute="top" constant="60" id="lo7-S6-1fZ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ydv-1Y-uOW"/>
                     </view>
-                    <navigationItem key="navigationItem" id="ncd-C4-e08">
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="out" id="dFl-hv-Drb">
-                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <connections>
-                                <action selector="logout:" destination="cvv-ZE-HKh" id="baI-F0-Y8y"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <tabBarItem key="tabBarItem" title="Study" image="study" id="D7K-7W-3Dc"/>
+                    <navigationItem key="navigationItem" id="2Kj-lJ-T3N"/>
+                    <connections>
+                        <outlet property="moduleLabel" destination="Lc1-gL-WwB" id="rI5-DJ-v3d"/>
+                        <outlet property="moduleTableView" destination="HZq-rf-Wvd" id="WEE-BM-nBQ"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="iaC-QI-Qbn" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="cvv-ZE-HKh" userLabel="Exit" sceneMemberID="exit"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f4L-bd-3rA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1948" y="-613"/>
+            <point key="canvasLocation" x="1134" y="-616"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="FTr-5r-5Op">
@@ -268,7 +275,7 @@
                         <color key="selectedImageTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="nCB-ms-jqc" kind="relationship" relationship="viewControllers" id="40h-TP-ncF"/>
+                        <segue destination="Nmz-FO-xEl" kind="relationship" relationship="viewControllers" id="47M-Ek-gvX"/>
                         <segue destination="zdu-6D-C9I" kind="relationship" relationship="viewControllers" id="ZME-0m-4Dx"/>
                         <segue destination="kRk-Bb-KJJ" kind="relationship" relationship="viewControllers" id="5QV-PB-cTi"/>
                     </connections>
@@ -277,36 +284,9 @@
             </objects>
             <point key="canvasLocation" x="183" y="92"/>
         </scene>
-        <!--Study-->
-        <scene sceneID="w1b-80-2SQ">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nCB-ms-jqc" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Study" image="study" id="XkZ-Ip-DgC"/>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="48W-8p-4Ov">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.0" green="0.29411764709999999" blue="0.52941176469999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <textAttributes key="titleTextAttributes">
-                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        </textAttributes>
-                        <textAttributes key="largeTitleTextAttributes">
-                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        </textAttributes>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="ExA-Qc-Di6" kind="relationship" relationship="rootViewController" id="OaT-iJ-B7G"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="upJ-Hw-7z3" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1134" y="-614"/>
-        </scene>
     </scenes>
     <resources>
         <image name="me" width="36" height="36"/>
-        <image name="out" width="36" height="36"/>
         <image name="practice" width="36" height="36"/>
         <image name="study" width="36" height="36"/>
     </resources>
