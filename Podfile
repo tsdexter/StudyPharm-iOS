@@ -7,6 +7,7 @@ target 'StudyPharm' do
 
   # Pods for StudyPharm
   pod 'Firebase/Core'
+  pod 'Firebase/Firestore'
   pod 'Firebase/Auth'
   pod 'MaterialComponents/Snackbar'
   pod 'lottie-ios'
