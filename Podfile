@@ -13,5 +13,6 @@ target 'StudyPharm' do
   pod 'lottie-ios'
   pod 'Down'
   pod 'MarkdownView'
+  pod 'Charts'
 
 end
