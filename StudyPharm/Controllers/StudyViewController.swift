@@ -110,5 +110,6 @@ extension StudyViewController: UITableViewDataSource {
         let item = list[indexPath.row]
         let detailView: ResourceListViewController = ResourceListViewController(item: item)
         self.present(detailView, animated: false, completion: nil)
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 }

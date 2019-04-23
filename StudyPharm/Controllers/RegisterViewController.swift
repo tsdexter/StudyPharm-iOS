@@ -105,24 +105,28 @@ class RegisterViewController: UIViewController {
         } else if (password.isEmpty || password.count < 6 || password != confirm) {
             registerAlert(message: "Password must be at least 6 character and both must match")
         } else {
-            self.registering()
+            self.registering(message: nil)
             Auth.auth().createUser(withEmail: email, password: password) { [weak self] authResult, error in
                 guard let strongSelf = self else { return }
                 guard let authResult = authResult, error == nil else {
                     strongSelf.registerAlert(message: error!.localizedDescription)
                     return
                 }
-//                let changeRequest = Auth.auth().currentUser?.createProfileChangeRequest()
-//                changeRequest?.displayName = name
-//                changeRequest?.commitChanges { (error) in
-//                    strongSelf.registerAlert(message: error!.localizedDescription)
-//                    return
-//                }
-                strongSelf.dismiss(animated: true, completion: nil)
-                strongSelf.emailTextField.text = ""
-                strongSelf.passwordTextField.text = ""
-                strongSelf.confirmPasswordTextField.text = ""
-                strongSelf.nameTextField.text = ""
+                let changeRequest = Auth.auth().currentUser?.createProfileChangeRequest()
+                changeRequest?.displayName = name
+                self?.registering(message: "Updating profile...")
+                changeRequest?.commitChanges { (error) in
+                    if (error != nil) {
+                        self?.registerAlert(message: error!.localizedDescription)
+                        return
+                    } else {
+                        strongSelf.dismiss(animated: true, completion: nil)
+                        strongSelf.emailTextField.text = ""
+                        strongSelf.passwordTextField.text = ""
+                        strongSelf.confirmPasswordTextField.text = ""
+                        strongSelf.nameTextField.text = ""
+                    }
+                }
             }
         }
     }
@@ -133,9 +137,9 @@ class RegisterViewController: UIViewController {
         MDCSnackbarManager.show(snack)
     }
     
-    func registering() {
-        let message = MDCSnackbarMessage()
-        message.text = "Registering account..."
-        MDCSnackbarManager.show(message)
+    func registering(message: String?) {
+        let snack = MDCSnackbarMessage()
+        snack.text = message ?? "Registering account..."
+        MDCSnackbarManager.show(snack)
     }
 }

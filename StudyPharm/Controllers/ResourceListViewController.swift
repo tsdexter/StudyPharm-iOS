@@ -177,5 +177,6 @@ extension ResourceListViewController: UITableViewDataSource {
         let item = list[indexPath.row]
         let detailView: ResourceViewController = ResourceViewController(item: item)
         self.present(detailView, animated: false, completion: nil)
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 }

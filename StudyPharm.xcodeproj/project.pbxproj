@@ -17,6 +17,10 @@
 		E4A9620F226E43D10023B413 /* ResourceListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A9620E226E43D10023B413 /* ResourceListCell.swift */; };
 		E4A96211226E441D0023B413 /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A96210226E441D0023B413 /* Resource.swift */; };
 		E4A96217226E4DD90023B413 /* ResourceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A96216226E4DD90023B413 /* ResourceViewController.swift */; };
+		E4A96219226E90110023B413 /* MeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A96218226E90110023B413 /* MeViewController.swift */; };
+		E4A9621B226E920A0023B413 /* Attempt.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A9621A226E920A0023B413 /* Attempt.swift */; };
+		E4A9621D226E9A1F0023B413 /* AttemptCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A9621C226E9A1F0023B413 /* AttemptCell.swift */; };
+		E4A9621F226E9DE80023B413 /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A9621E226E9DE80023B413 /* Quiz.swift */; };
 		E4DF98E42267FE65000A35F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DF98E32267FE65000A35F6 /* AppDelegate.swift */; };
 		E4DF98E62267FE65000A35F6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DF98E52267FE65000A35F6 /* LoginViewController.swift */; };
 		E4DF98E92267FE65000A35F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4DF98E72267FE65000A35F6 /* Main.storyboard */; };
@@ -42,6 +46,10 @@
 		E4A9620E226E43D10023B413 /* ResourceListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceListCell.swift; sourceTree = "<group>"; };
 		E4A96210226E441D0023B413 /* Resource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
 		E4A96216226E4DD90023B413 /* ResourceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceViewController.swift; sourceTree = "<group>"; };
+		E4A96218226E90110023B413 /* MeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeViewController.swift; sourceTree = "<group>"; };
+		E4A9621A226E920A0023B413 /* Attempt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Attempt.swift; sourceTree = "<group>"; };
+		E4A9621C226E9A1F0023B413 /* AttemptCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttemptCell.swift; sourceTree = "<group>"; };
+		E4A9621E226E9DE80023B413 /* Quiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quiz.swift; sourceTree = "<group>"; };
 		E4DF98E02267FE65000A35F6 /* StudyPharm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StudyPharm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4DF98E32267FE65000A35F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E4DF98E52267FE65000A35F6 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -90,6 +98,8 @@
 			children = (
 				E4A96202226D8C320023B413 /* Module.swift */,
 				E4A96210226E441D0023B413 /* Resource.swift */,
+				E4A9621A226E920A0023B413 /* Attempt.swift */,
+				E4A9621E226E9DE80023B413 /* Quiz.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -104,6 +114,7 @@
 				E4A961FE226D8A680023B413 /* StudyViewController.swift */,
 				E4A96204226D9E210023B413 /* ResourceListViewController.swift */,
 				E4A96216226E4DD90023B413 /* ResourceViewController.swift */,
+				E4A96218226E90110023B413 /* MeViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -123,6 +134,7 @@
 				E4A96214226E446B0023B413 /* UserBarView */,
 				E4A96200226D8BF60023B413 /* ModuleListCell.swift */,
 				E4A9620E226E43D10023B413 /* ResourceListCell.swift */,
+				E4A9621C226E9A1F0023B413 /* AttemptCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -150,10 +162,10 @@
 			children = (
 				E4DF98FE22683A34000A35F6 /* animations */,
 				E4DF98E32267FE65000A35F6 /* AppDelegate.swift */,
+				E4DF98E72267FE65000A35F6 /* Main.storyboard */,
 				E4A96212226E44360023B413 /* Models */,
 				E4A96215226E449A0023B413 /* Views */,
 				E4A96213226E444F0023B413 /* Controllers */,
-				E4DF98E72267FE65000A35F6 /* Main.storyboard */,
 				E4DF98EA2267FE65000A35F6 /* Assets.xcassets */,
 				E4DF98EC2267FE65000A35F6 /* LaunchScreen.storyboard */,
 				E4DF98EF2267FE65000A35F6 /* Info.plist */,
@@ -266,6 +278,7 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-StudyPharm/Pods-StudyPharm-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/BoringSSL-GRPC/openssl_grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
 				"${BUILT_PRODUCTS_DIR}/Down/Down.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
@@ -285,6 +298,7 @@
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl_grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Down.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
@@ -311,6 +325,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4A9621B226E920A0023B413 /* Attempt.swift in Sources */,
 				E4A9620F226E43D10023B413 /* ResourceListCell.swift in Sources */,
 				E4DF98FA226810B6000A35F6 /* PracticeViewController.swift in Sources */,
 				E4A96205226D9E210023B413 /* ResourceListViewController.swift in Sources */,
@@ -319,8 +334,11 @@
 				E4A96217226E4DD90023B413 /* ResourceViewController.swift in Sources */,
 				E4A961FF226D8A680023B413 /* StudyViewController.swift in Sources */,
 				E4DF98E42267FE65000A35F6 /* AppDelegate.swift in Sources */,
+				E4A96219226E90110023B413 /* MeViewController.swift in Sources */,
 				E4DF98F822680A4E000A35F6 /* MainTabController.swift in Sources */,
+				E4A9621D226E9A1F0023B413 /* AttemptCell.swift in Sources */,
 				E4A96203226D8C320023B413 /* Module.swift in Sources */,
+				E4A9621F226E9DE80023B413 /* Quiz.swift in Sources */,
 				E4A96211226E441D0023B413 /* Resource.swift in Sources */,
 				E4A96201226D8BF60023B413 /* ModuleListCell.swift in Sources */,
 				E4A9620B226E1B350023B413 /* UserBarView.swift in Sources */,
